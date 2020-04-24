@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.knit.sb_kuch">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".push_notification"></activity>
+        <activity android:name=".Content_Provider_demo" />
+        <activity android:name=".sqLite" />
+        <activity android:name=".Progress_bar" />
+        <activity android:name=".Player" />
+        <activity android:name=".video_player" />
+        <activity android:name=".ViewVideo" />
+        <activity android:name=".extract_video_from_file" />
+        <activity android:name=".Media_player_many_songs" />
+        <activity android:name=".Audio_player" />
+        <activity android:name=".Shared_Preference_demo" />
+        <activity android:name=".Sensor_Demo" />
+        <activity android:name=".Runtime_permission" />
+        <activity android:name=".Send_sms" />
+        <activity android:name=".Email" />
+        <activity android:name=".Intent_demo" />
+        <activity android:name=".Progress_Dialog" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name=".Provider_Demo"
+            android:authorities="com.knit.sb_kuch"
+            android:exported="true" />
+
+        <service android:name=".Service_helper" />
+    </application>
+
+</manifest>
